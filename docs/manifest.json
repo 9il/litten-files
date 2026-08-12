@@ -1,0 +1,11 @@
+{
+    "name": "Litten",
+    "short_name": "Litten",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#0A84FF",
+    "description": "Litten web demo (Wasm when available, JS fallback).",
+    "orientation": "any",
+    "prefer_related_applications": false
+}
