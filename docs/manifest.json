@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#0A84FF",
-    "description": "Litten web demo (Wasm when available, JS fallback).",
+    "description": "Litten web demo (WasmGC / dart2wasm).",
     "orientation": "any",
     "prefer_related_applications": false
 }
