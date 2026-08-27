@@ -431,7 +431,7 @@ class CompiledApp {
       ZI: x0 => x0.completed,
       ZJ: (x0,x1) => x0.querySelector(x1),
       a: (o0, o1, o2, o3) => [o0, o1, o2, o3],
-      aB: (a, i) => a.push(i),
+      aB: (x0,x1,x2,x3) => x0.pushState(x1,x2,x3),
       aC: o => {
         if (o === null || o === undefined) return 0;
         if (o instanceof Uint8Array) return 1;
@@ -445,7 +445,7 @@ class CompiledApp {
       aI: x0 => x0.ready,
       aJ: (x0,x1) => x0.createElement(x1),
       b: (x0,x1,x2) => { x0[x1] = x2 },
-      bB: (x0,x1,x2,x3) => x0.pushState(x1,x2,x3),
+      bB: () => ({}),
       bC: Function.prototype.call.bind(DataView.prototype.setInt8),
       bD: x0 => x0.remove(),
       bE: x0 => x0.relatedTarget,
@@ -455,7 +455,7 @@ class CompiledApp {
       bI: x0 => x0.tracks,
       bJ: (o, a) => o + a,
       c: o => o,
-      cB: () => ({}),
+      cB: (o, p, v) => o[p] = v,
       cC: Function.prototype.call.bind(DataView.prototype.getInt8),
       cD: (x0,x1) => x0.getPropertyValue(x1),
       cE: s => {
@@ -470,7 +470,7 @@ class CompiledApp {
       cI: x0 => x0.close(),
       cJ: x0 => x0.children,
       d: (o, p) => o[p],
-      dB: (o, p, v) => o[p] = v,
+      dB: () => [],
       dC: o => {
         if (o === null || o === undefined) return 0;
         if (o instanceof Int8Array) return 1;
@@ -492,7 +492,7 @@ class CompiledApp {
       dI: (x0,x1) => ({frameIndex: x0,completeFramesOnly: x1}),
       dJ: (x0,x1) => { x0.id = x1 },
       e: () => globalThis,
-      eB: () => [],
+      eB: (a, i) => a.push(i),
       eC: (o, start, length) => new Float64Array(o.buffer, o.byteOffset + start, length),
       eD: x0 => x0.console,
       eE: x0 => x0.selectionDirection,
